@@ -21,6 +21,14 @@ SynomosAI 四支柱体系：**身份（Identity）· 溯源（Traceability）· 
 
 ---
 
+## GOSIM 2026 参赛复现
+
+本仓库参加 **GOSIM 深圳 2026「智能体软件工厂」黑客松**，参赛主张 **Trustworthy Agent Factory = 注册 · 证据 · 门禁（可信 / 可复现 / 可观测）**。
+
+- 跑通演示：`python offline_worker.py --model <本地模型>`（需先 `ollama pull`）
+- 生成生产轨迹：`python gosim2026/run_trace.py` → 产出 `gosim2026/trace.jsonl`（逐事件证据链）
+- 轨迹公开示例：见 `gosim2026/trace.jsonl` 与 `gosim2026/manifest.json`
+
 ## 免责声明
 
 本仓库内容为**理论站位与工具化探索**，不代表任何已获认证、已商业化交付或已服务特定客户的声明；文中涉及的外部标准、认证与条款信息为公开资料转述，正式引用前请**独立核实**。API、授权码与形象大使等为路线图（roadmap）事项，尚未上线。

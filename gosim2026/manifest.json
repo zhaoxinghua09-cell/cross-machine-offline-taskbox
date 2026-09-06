@@ -1,0 +1,23 @@
+{
+  "title": "GOSIM 2026 ARC-Bench 生产轨迹 - cross-machine-offline-taskbox",
+  "schema": "每行一个 JSON 事件，字段: ts/step/event/actor/detail",
+  "event_types": [
+    "agent_plan",
+    "human_review",
+    "human_task_submit",
+    "model_output",
+    "prompt_build",
+    "result_store",
+    "tool_call_ollama"
+  ],
+  "actor_legend": {
+    "human": "人类操作者（派活+复核）",
+    "agent": "离线 worker/调度逻辑",
+    "tool": "本地 Ollama 推理"
+  },
+  "task_count": 2,
+  "event_count": 14,
+  "repro": "响应由本机 qwen3.5:4b-8k 真实生成（think:false）；run_trace.py 可实时复现等价轨迹",
+  "privacy": "已去敏：不含雇主名/内部路径/真名/内部代号",
+  "generated_at": "2026-09-06T16:20:38.108622Z"
+}
